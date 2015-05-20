@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "sample project of gulp",
   "main": "lib/main.js",
-  "dependencies": {},
+  "dependencies": {
+    "flummox": "^4.0.0",
+    "react": "^0.13.3",
+    "react-jade": "^2.4.0"
+  },
   "devDependencies": {
     "browserify": "^9.0.8",
     "coffee-script": "^1.9.2",
@@ -15,7 +19,7 @@
     "watchify": "^3.2.1"
   },
   "scripts": {
-    "watch" : "node_modules/.bin/gulp --require coffee-script watch"
+    "watch": "node_modules/.bin/gulp --require coffee-script watch"
   },
   "author": "pnlybubbles",
   "license": "MIT"
