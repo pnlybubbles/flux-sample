@@ -1,4 +1,4 @@
 React = require 'react'
 Component = require './component'
 
-React.render React.createElement(Component, null), document.getElementById("app")
+React.render <Component />, document.getElementById("app")
