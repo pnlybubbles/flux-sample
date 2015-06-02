@@ -12,21 +12,14 @@ class Component extends React.Component
     super props
     @state =
       count: store.getCount()
-    console.log 'state', @state
-    console.log 'component', this
-    console.log 'store', store
     store.on 'change', =>
-      console.log 'change', this
       this._onChange()
 
   _onChange: ->
-    console.log store.getCount()
     this.setState
       count: store.getCount()
 
   tick: ->
-    console.log 'state:tick', @state
-    console.log 'component:tick', this
     action.countUp @state.count + 1
 
   render: ->

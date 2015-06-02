@@ -8,8 +8,6 @@ class Store extends Emitter
 
   getCount: -> @count
   onCountUp: (count) ->
-    console.log 'count:onCountUp', count
-    console.log 'Store:onCountUp', this
     @count = count
     this.emit 'change'
 
